@@ -1,21 +1,12 @@
 import './App.css'
+import AlunosComponent from './components/AlunosComponent'
+import ListaAlunosComponent from "./components/ListaAlunosComponent.jsx";
 
 function App() {
-
   return (
     <>
-        <div id="formulario">
-            formulario de cadastro de alunos
-        </div>
-        <div id="dados">
-            tabela de alunos
-        </div>
-        <div id="comandos">
-            botao que gera o sorteio
-        </div>
-        <div id="resultado">
-            resultado do sorteio
-        </div>
+        <AlunosComponent />
+        <ListaAlunosComponent />
     </>
   )
 }
