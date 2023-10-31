@@ -1,14 +1,15 @@
-import './App.css'
-import AlunosComponent from './components/AlunosComponent'
+import "./App.css";
+import "bulma";
+import AlunosComponent from "./components/AlunosComponent";
 import ListaAlunosComponent from "./components/ListaAlunosComponent.jsx";
 
 function App() {
   return (
-    <>
-        <AlunosComponent />
-        <ListaAlunosComponent />
-    </>
-  )
+    <main className="box">
+      <AlunosComponent />
+      <ListaAlunosComponent />
+    </main>
+  );
 }
 
-export default App
+export default App;
