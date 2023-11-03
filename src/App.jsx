@@ -1,15 +1,9 @@
 import "./App.css";
 import "bulma";
-import AlunosComponent from "./components/AlunosComponent";
-import ListaAlunosComponent from "./components/ListaAlunosComponent.jsx";
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <main className="box">
-      <AlunosComponent />
-      <ListaAlunosComponent />
-    </main>
-  );
+  return <Home />;
 }
 
 export default App;

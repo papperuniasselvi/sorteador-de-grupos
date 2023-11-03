@@ -9,7 +9,6 @@ const AlunosComponent = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
-    //evita ações do formulario
     e.preventDefault();
     //criando novo aluno pela entidade
     const novoAluno = new AlunoEntity(nome, email);
@@ -22,29 +21,31 @@ const AlunosComponent = () => {
 
   return (
     <>
-      <h2 className="title">Adicionar Novo Aluno</h2>
+      <h2 className="title">Cadastro de alunos</h2>
       <div>
         <form onSubmit={handleSubmit}>
-            <FormInput
-              label="Nome"
-              placeholder="Ex: Lucas Novack"
-              type="text"
-              value={nome}
-              id="nome"
-              onChange={setNome}
-            />
+          <FormInput
+            label="Nome"
+            placeholder="Ex: Lucas Novack"
+            type="text"
+            value={nome}
+            id="nome"
+            onChange={setNome}
+          />
 
-            <FormInput
-              label="Email"
-              type="email"
-              placeholder="Ex: rogerio@gmail.com"
-              value={email}
-              id="email"
-              onChange={setEmail}
-            />
-          <button className="button is-primary my-4" type="submit">
-            Adicionar Aluno
-          </button>
+          <FormInput
+            label="Email"
+            type="email"
+            placeholder="Ex: rogerio@gmail.com"
+            value={email}
+            id="email"
+            onChange={setEmail}
+          />
+          <div className="buttons is-right">
+            <button className="button is-primary my-4" type="submit">
+              Adicionar Aluno
+            </button>
+          </div>
         </form>
       </div>
     </>
